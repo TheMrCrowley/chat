@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+a {
+  display: block;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #202026;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #fecb00;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  font-size: 24px;
+}
+
+.back-btn {
+  border-left: 3px solid #fecb00;
+  border-bottom: 3px solid #fecb00;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: .2s transform ease-in-out;
+}
+
+.back-btn:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.back-btn:active {
+  transform: rotate(45deg) scale(.8);
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.chat-header-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url('../assets/user.png');
+}
+
+.language {
+  font-size: 18px;
+}
+
+.chat-subheader {
+  display: flex;
+  padding: 1rem 0;
+  font-size: 24px;
+  justify-content: space-between;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.btn-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-icon:active {
+  transform: scale(.8);
+}
+
+.call-icon {
+  background-image: url('../assets/icons/call.svg');
+}
+
+.video-icon {
+  background-image: url('../assets/icons/video.svg');
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 1rem;
+  flex: 1 1 auto;
+  padding: 1rem 0;
+}
+
+.companion-message-item {
+  display: grid;
+  max-width: 95%;
+  grid-template-columns: .1fr 1fr;
+  column-gap: 1rem;
+  color: #202026;
+}
+
+.companion-avatar {
+  width: 2rem;
+  height: 2rem;
+  background-image: url('../assets/user.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.message-body {
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+}
+
+.companion-message {
+  background-color: #fecb00;
+}
+
+.message-translate {
+  grid-column: 2;
+  padding: .5rem 1rem;
+  color: #fecb00
+}
+
+.user-message-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  max-width: 80%;
+  align-self: flex-end;
+}
+
+.user-message {
+  background-color: #cbcbcb;
+  color: #202026;
+}
+
+.check-icon {
+  background-image: url('../assets/icons/check.svg');
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+}
+
+.emoji-item {
+  background-image: url('../assets/icons/emoji.svg');
+  width: 2rem;
+  height: 2rem;
+}
+
+.heart-item {
+  background-image: url('../assets/icons/like.svg');
+  width: 2rem;
+  height: 2rem;
+}
+
+.message-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like-btn {
+  background-image: url('../assets/icons/like.svg');
+}
+
+.send-btn {
+  background-image: url('../assets/icons/send.svg');
+}
+
+.input-wrapper {
+  display: flex;
+  min-height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0 1rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+}
+
+.emoji-btn {
+  background-image: url('../assets/icons/emoji-btn.svg');
+}
+
+.camera-btn {
+  background-image: url('../assets/icons/photo.svg');
+  border-radius: 0;
+}
+
+.input-message {
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+}
+
+.hide {
+  transform: scale(0);
+}
